@@ -29,6 +29,7 @@ class MyObject : public Nan::ObjectWrap {
 
 	  void Execute () {
 	    usleep(milliseconds*1000);
+	    SetErrorMessage("Error Message");
 	  }
 
 	 private:

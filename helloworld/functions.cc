@@ -79,7 +79,6 @@ NAN_METHOD(MyObject::PlusOne) {
 
 
 NAN_METHOD(MyObject::Add) {
-  Nan::HandleScope scope;
   int a = info[0]->Int32Value();
   int b = info[1]->Int32Value();
   int result = a + b;
