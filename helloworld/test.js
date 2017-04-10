@@ -6,7 +6,7 @@ console.log(obj.plusOne());
 console.log(obj.plusOne());
 console.log(obj.plusOne());
 console.log(obj.add(10, 20));
-console.log(obj.printName(1));
+console.log(obj.printName("Renan"));
 
 function callback(err) {
 	console.log("I woke up after 5s");

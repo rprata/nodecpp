@@ -86,11 +86,9 @@ NAN_METHOD(MyObject::Add) {
 }
 
 NAN_METHOD(MyObject::PrintName) {
-  if (info[0]->IsString()) {
-    v8::String::Utf8Value cmd (info[0]);
-    std::string name = std::string(*cmd);
-    info.GetReturnValue().Set(Nan::New<v8::String>(name.c_str()).ToLocalChecked());
-  }
+  v8::String::Utf8Value cmd (info[0]);
+  std::string name = std::string(*cmd);
+  info.GetReturnValue().Set(Nan::New<v8::String>(name.c_str()).ToLocalChecked());
 }
 
 NAN_METHOD(MyObject::WakeUp) {
