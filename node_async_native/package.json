@@ -1,0 +1,15 @@
+{
+  "name": "node-async-native",
+  "version": "1.0.0",
+  "description": "A simple example calling an async task in node using C++",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Renan Prata",
+  "license": "MIT",
+  "dependencies": {
+    "nan": "^2.6.1",
+    "streaming-worker": "file:./streaming-worker"
+  }
+}
